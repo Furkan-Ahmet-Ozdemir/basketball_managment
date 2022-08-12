@@ -1,0 +1,27 @@
+enum Position {
+    PG,SG,SF,PF,C
+}
+
+input PlayerDto {
+    name: String!,
+    surname: String!,
+    position: Position!
+}
+
+type Player {
+    id: ID!,
+    name: String,
+    surname: String,
+    position: Position
+}
+
+type Mutation {
+    addPlayer(playerDto: PlayerDto): Player
+    deletePlayer(id: ID): Player
+}
+
+
+type Query {
+    getAllPlayers:[Player]
+}
+

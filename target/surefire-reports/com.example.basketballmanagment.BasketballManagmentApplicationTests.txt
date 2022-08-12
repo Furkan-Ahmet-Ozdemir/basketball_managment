@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.example.basketballmanagment.BasketballManagmentApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.428 s <<< FAILURE! - in com.example.basketballmanagment.BasketballManagmentApplicationTests
+playerAdd  Time elapsed: 0.247 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.graphql.spring.boot.test.GraphQLTestTemplate.postForResource(String)" because "this.graphQLTestTemplate" is null
+	at com.example.basketballmanagment.BasketballManagmentApplicationTests.playerAdd(BasketballManagmentApplicationTests.java:40)
+
