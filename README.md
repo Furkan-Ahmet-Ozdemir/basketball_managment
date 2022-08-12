@@ -1,8 +1,8 @@
-# Graph*QL Spring
+# GraphQL Spring
 * Bu uygulamanın amacı Player eklemek, silmek ve listelemek.
 
 ## Kullandığım Teknolojiler
-* Spring
+* Java Spring
 * H2 Database
 * GraphQL
 * JPA
@@ -11,7 +11,7 @@
 * IntelliJ IDE
 
 ## Projeye Nasıl Çalıştırılır ?
-* Projeyi bu adresten indirmeniz gerekiyor :[proje linki](https://github.com/Furkan-Ahmet-Ozdemir/basketball-managment)
+* Projeyi bu adresten indirmeniz gerekiyor :[proje linki](https://github.com/Furkan-Ahmet-Ozdemir/basketball_managment)
 * Projeyi zipten çıkarın.
 
 ### IDE Gerekmeden Çalıştırmak İçin:
@@ -20,25 +20,25 @@
 * Cmd ye ```mvn --version``` yazdığınzda ``` Apache Maven 3.8.4 ``` benzeri bir cevap almalısınız.
 * Daha sonra CMD yi açıp **pom.xml**  in olduğu dizine gelin.
 * ```mvn spring-boot:run``` komutunu çalıştırın.
-* 
+
 ```
 Tomcat started on port(s): 8080 (http) with context path ''  
-Started VetApplication in 7.574 seconds (JVM running for 3.991)
+Started BasketballManagmentApplication in 7.574 seconds (JVM running for 3.991)
 ```
-* Ben Postman kullandım siz başka bir araç kullanabilirsiniz http://localhost:8080/graphql adresine POST isteği gönderebilirsiniz.
 
 ### IntelliJ IDE İle Çalıştırmak İçin:
 * Projeyi IntelliJ IDE ile açın.
-* ```Run VetApplication```
+* ```Run BasketballManagmentApplication```
 * Run kısmında aşağıdaki yazıya benzer yazılar geliyorsa proje çalışmıştır :
 ```
 Tomcat started on port(s): 8080 (http) with context path ''  
-Started VetApplication in 7.574 seconds (JVM running for 3.991)
+Started BasketballManagmentApplication in 7.574 seconds (JVM running for 3.991)
 ```
 * Ben Postman kullandım siz başka bir araç kullanabilirsiniz http://localhost:8080/graphql adresine POST isteği gönderebilirsiniz.
 
+* Testleri çalıştırmak için ```mvn test```
 ###  Postman İle İstek Atma:
-* Player ekleme:
+* Player eklemek için:
 ```
 mutation{
   addPlayer(playerDto:{name:"Furkan",surname:"A",position:PF}){
